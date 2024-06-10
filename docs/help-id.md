@@ -1,4 +1,4 @@
-# Rxcle Metastate for InDesign
+# Rxcle Metastate
 
 Metastate is a productivity plugin for Adobe InDesign that enables you to take named snapshots of the visibility and selection states of Layers and Page Items and quickly switch between these states. The states are stored within your documents as non-critical metadata, which means that documents with states can still be opened and edited without having the Metastate plugin installed.
 
@@ -109,20 +109,22 @@ The top of this view is a title bar that contains the following buttons, from le
 
 The settings and actions shown are as follows, from top to bottom:
 
-| Setting                  | Description |
-|--------------------------|-------------|
-| **Sort State By Name**   | Enable to sort states in alphabetical order, disable to sort in creation order.
-| **Quick Create**         | Enable to create new states immediately, using a default name. Disable to  show the Edit State view first.
-| **Layer Visibility**     | Enable to restore the visibility state (shown/hidden) of Layers.
-| **Page Item Visibility** | Enable to restore the visibility state (shown/hidden) of Page Items.
-| **Current Spread Only**  | Enable to only restore the visibility state of Page Items for the current Spread. Disable to restore for the entire document.
-| **Hide Only**            | Enable to only _hide_ additional Layers and Page Items when applying; Layers/Page Items that are already hidden are not made visible, even if they were in the original state snapshot.
-| **Show Only**            | Enable to only _show_ additional Layers and Page Items when applying; Layers/Page Items that are already shown are not hidden, even if they were in the original state snapshot.
-| **Active Layer**         | Enable to restore the active Layer when applying the State.
+| Setting                     | Description |
+|-----------------------------|-------------|
+| **Sort States By Name**     | Enable to sort states in alphabetical order, disable to sort in creation order.
+| **Quick Create**            | Enable to create new states immediately, using a default name. Disable to  show the Edit State view first.
+| **Confirm Command Success** | Enable to get a notification message on commands that were executed successfully. Disable to only show failures.
+| **Layer Visibility**        | Enable to restore the visibility state (shown/hidden) of Layers.
+| **Page Item Visibility**    | Enable to restore the visibility state (shown/hidden) of Page Items.
+| **Current Spread Only**     | Enable to only restore the visibility state of Page Items for the current Spread. Disable to restore for the entire document.
+| **Hide Only**               | Enable to only _hide_ additional Layers and Page Items when applying; Layers/Page Items that are already hidden are not made visible, even if they were in the original state snapshot.
+| **Show Only**               | Enable to only _show_ additional Layers and Page Items when applying; Layers/Page Items that are already shown are not hidden, even if they were in the original state snapshot.
+| **Active Layer**            | Enable to restore the active Layer when applying the State.
 
 Notes:
 - The **Interface** settings apply globally and immediately. 
 - The **State Defaults** settings apply only to newly created states.
+- The **Confirm Command Success** setting only applies to commands executed via the InDesign Plugins panel (or via shortcut or script), not for commands executed from within the Metastate panel UI.
 - **Current Spread Only** is only available when **Page Item Visibility** is enabled.
 - **Hide-** and **Show Only** are mutually exclusive. Disable both to restore the visibility state exactly as it was originally.
 - Disabling all three options **Layer Visibility**, **Page Item Visibility** and **Active Layer** will effectively _disable_ States: nothing will be restored.

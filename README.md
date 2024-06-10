@@ -5,8 +5,8 @@ Metastate is a productivity plugin for Adobe InDesign and Photoshop that enables
 ## Installation
 Obtain and install **Metastate** via **Adobe Exchange**. Note that there is a separate edition for Photoshop and InDesign:
 
-- [Metastate for Photoshop](https://exchange.adobe.com/apps/cc/5c49df2d/metastate-for-photoshop)
-- [Metastate for InDesign](https://exchange.adobe.com/apps/cc/3a475d7f/metastate-for-indesign)
+- [Metastate for Photoshop](https://exchange.adobe.com/apps/cc/7ed35f2b/metastate-for-photoshop)
+- [Metastate for InDesign](https://exchange.adobe.com/apps/cc/3177a2eb/metastate-for-indesign)
 
 
 After installation a new menu and Panel is available under the `Plugins` panel in InDesign or Photoshop.

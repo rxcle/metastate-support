@@ -1,4 +1,4 @@
-# Rxcle Metastate for Photoshop
+# Rxcle Metastate
 
 Metastate is a productivity plugin for Adobe Photoshop that enables you to take named snapshots of the visibility and selection states of Layers and quickly switch between these states. The states are stored within your documents as non-critical metadata, which means that documents with states can still be opened and edited without having the Metastate plugin installed.
 
@@ -111,8 +111,9 @@ The settings and actions shown are as follows, from top to bottom:
 
 | Setting                     | Description |
 |-----------------------------|-------------|
-| **Sort State By Name**      | Enable to sort states in alphabetical order, disable to sort in creation order.
+| **Sort States By Name**     | Enable to sort states in alphabetical order, disable to sort in creation order.
 | **Quick Create**            | Enable to create new states immediately, using a default name. Disable to  show the Edit State view first.
+| **Confirm Command Success** | Enable to get a notification message on commands that were executed successfully. Disable to only show failures.
 | **Layer Visibility**        | Enable to restore the visibility state (shown/hidden) of top-level Layers, Groups and Artboards.
 | **Nested Layer Visibility** | Enable to restore the visibility state (shown/hidden) of nested Layers and Groups.
 | **Current Artboard Only**   | Enable to only restore the visibility state of Nested Layers on the current Artboard. Disable to restore for the entire document.
@@ -123,7 +124,8 @@ The settings and actions shown are as follows, from top to bottom:
 Notes:
 - The **Interface** settings apply globally and immediately. 
 - The **State Defaults** settings apply only to newly created states.
-- **Hide-** and **Show Only** are mutually exclusive. Disable both to restore the visibility state exactly as it was originally.
+- The **Confirm Command Success** setting only applies to commands executed via the Photoshop Plugins panel (or via shortcut or script), not for commands executed from within the Metastate panel UI.
+- **Hide Only** and **Show Only** are mutually exclusive. Disable both to restore the visibility state exactly as it was originally.
 - Disabling all three options **Layer Visibility**, **Nested Layer Visibility** and **Active Layer** will effectively _disable_ States: nothing will be restored.
 
 ## Plugin Commands
